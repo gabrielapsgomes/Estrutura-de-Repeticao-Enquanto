@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const quantidade = parseInt(prompt("digite a quantidade de numeros para rodar"));
+        let numeroMaior = 0;
+        let numeroMenor = 999;
+        for (i = 0; i <= quantidade; i++) {
+            let valor = parseInt(prompt("Digite seu número"));
+            if (valor > numeroMaior) {
+                numeroMaior = valor;
+                console.log(`o número maior é ${numeroMaior}`);
+            } else {
+                numeroMenor = valor
+                console.log(`O número menor é ${numeroMenor}`);
+
+            }
+        }
+    </script>
+</body>
+
+</html>
