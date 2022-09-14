@@ -113,6 +113,7 @@ while (true) {
     let salario = parseInt(prompt("Qual o valor do seu salário?"))
     let filhos = parseInt(prompt("Quantos filhos você tem?"))
 
+
     if (salario < 0) {
         break;
     }
