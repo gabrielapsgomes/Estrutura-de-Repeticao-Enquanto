@@ -101,9 +101,15 @@ console.log(`A média do salario liquido feminino é ${somaDoSalarioFeminino / c
  A média do salario liquido masculino é ${somaDoSalarioMasculino / countMasculino}`)*/
 
 
-/*EXERCICIO 26- Estrutura de Repetição*/
+/*EXERCICIO 26- Estrutura de Repetição
 let countSalario = 0
 let countFilhos = 0
+let count = 0
+
+let guardar = 0
+let temporaria = 0
+
+let countPessoas = 0
 
 let caixa = 0
 let caixa1 = 0
@@ -113,19 +119,55 @@ while (true) {
     let salario = parseInt(prompt("Qual o valor do seu salário?"))
     let filhos = parseInt(prompt("Quantos filhos você tem?"))
 
-
-    if (salario < 0) {
+    if (salario < 0 && filhos < 0) {
         break;
     }
+    if (salario > temporaria) {
+        temporaria = salario
+    }
+    if (salario <= 100) {
+        count++
+    }
+
     caixa += salario
     countSalario++
 
     caixa1 += filhos
     countFilhos++
+    countPessoas++
 }
-console.log(`A media do salario é ${caixa / countSalario} 
-A media do numero de filhos é ${caixa1 / countFilhos}`)
+guardar = (count * 100) / countPessoas
 
+console.log(`A media do salario da população é R$${caixa / countSalario} 
+A media do numero de filhos é ${caixa1 / countFilhos}
+O maior salario da população é R$${temporaria}
+O percentual de pessoas com salário até R$100 é ${guardar}%`)*/
 
+/*
+4  100
+2   x    
 
-/*EXERCICIO 27- Estrutura de Repetição*/
+4x = 200 
+x = 200 / 4
+
+x=50
+*/
+
+/*EXERCICIO 27- Estrutura de Repetição
+let countZe = 0
+let countChico = 0
+
+let ze = 110
+let chico = 150
+
+while (ze < chico) {
+    ze += 3
+    countZe++
+
+    if (chico >= ze) {
+        chico += 2
+        countChico++
+    }
+}
+console.log(`Serão necessário ${countZe} anos para Zé ser maior que Chico`)
+console.log(countChico)*/
